@@ -1,19 +1,20 @@
 import Link from "next/link";
 import Image from "next/image";
-import uk from "../../../public/icons/uk.png";
+import uk from "../../../../public/icons/uk.png";
+import { Button } from "@/components/ui/button";
 
 const links = [
+    { name: "Why Choose Us?", link: "" },
     {
-        name: "Home",
-        link: "",
-    },
-    { name: "About", link: "" },
-    {
-        name: "Survey",
+        name: "Our Services",
         link: "",
     },
     {
-        name: "Contact",
+        name: "Our Works",
+        link: "",
+    },
+    {
+        name: "Contact Us",
         link: "",
     },
 ];
@@ -53,12 +54,14 @@ export default function Navbar({ link, header }: HeaderProps) {
                                 className="me-1"
                                 src={uk}
                                 alt="UK Flag"
-                                width={20}
+                                width={25}
                                 height={15}
                             />
-                            <span>EN/THB</span>
                         </button>
                     </div>
+                    <Button className="bg-black text-white text-[16px] py-6 px-4 cursor-pointer">
+                        Get a Free Consultation
+                    </Button>
                 </div>
             </div>
         </nav>
