@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import uk from "../../../../public/icons/uk.png";
+import Logo from "../../../../public/logo.png";
 import { Button } from "@/components/ui/button";
 
 const links = [
@@ -21,17 +22,19 @@ const links = [
 
 interface HeaderProps {
     link: string;
-    header: string;
 }
 
-export default function Navbar({ link, header }: HeaderProps) {
+export default function Navbar({ link }: HeaderProps) {
     return (
         <nav className="bg-white my-2 max-w-screen-xl mt-4 border-2 px-4 rounded-xs mx-auto w-full shadow-sm">
             <div className="flex justify-between items-center px-4 py-3 max-w-screen-xl mx-auto">
                 {/* Logo */}
-                <span className="text-4xl font-bold text-black ">
-                    <Link href={link}>{header}</Link>
-                </span>
+                <Link href={link} className="flex items-center">
+                    <Image src={Logo} alt="logo" className="me-1" width={50} />
+                    <h1 className="mt-2 text-3xl  font-bold text-black">
+                        OCTOTECH
+                    </h1>
+                </Link>
 
                 <ul className="flex space-x-6">
                     {links.map((item, index) => (
@@ -59,7 +62,10 @@ export default function Navbar({ link, header }: HeaderProps) {
                             />
                         </button>
                     </div>
-                    <Button className="bg-black text-white text-[16px] py-6 px-4 cursor-pointer">
+                    <Button
+                        variant="default"
+                        className="bg-[#3da9fc] text-white text-[16px] py-6 px-4 cursor-pointer"
+                    >
                         Contact Us
                     </Button>
                 </div>

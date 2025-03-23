@@ -34,10 +34,10 @@ export default function RootLayout({
     return (
         <html lang="en">
             <body
-                className={`${geistSans.variable} ${geistMono.variable} ${kanit.variable} antialiased flex flex-col min-h-screen`}
+                className={`${geistSans.variable} bg-[#fffffe] ${geistMono.variable} ${kanit.variable} antialiased flex flex-col min-h-screen`}
             >
-                <Navbar link="/" header="OCTOTECH" />
-                <main className="flex-grow-1">{children}</main>
+                <Navbar link="/"></Navbar>
+                <main className="flex-grow-1 bg-[#fffffe]">{children}</main>
                 <Footer />
             </body>
         </html>
