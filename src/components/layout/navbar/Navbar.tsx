@@ -13,10 +13,10 @@ const links = [
         name: "Our Works",
         link: "",
     },
-    {
-        name: "Contact Us",
-        link: "",
-    },
+    // {
+    //     name: "Contact Us",
+    //     link: "",
+    // },
 ];
 
 interface HeaderProps {
@@ -26,7 +26,7 @@ interface HeaderProps {
 
 export default function Navbar({ link, header }: HeaderProps) {
     return (
-        <nav className="bg-white  shadow-md">
+        <nav className="bg-white my-2 max-w-screen-xl mt-4 border-2 px-4 rounded-xs mx-auto w-full shadow-sm">
             <div className="flex justify-between items-center px-4 py-3 max-w-screen-xl mx-auto">
                 {/* Logo */}
                 <span className="text-4xl font-bold text-black ">
@@ -51,7 +51,7 @@ export default function Navbar({ link, header }: HeaderProps) {
                     <div className="flex items-center me-2">
                         <button className="flex items-center">
                             <Image
-                                className="me-1"
+                                className=""
                                 src={uk}
                                 alt="UK Flag"
                                 width={25}
@@ -60,7 +60,7 @@ export default function Navbar({ link, header }: HeaderProps) {
                         </button>
                     </div>
                     <Button className="bg-black text-white text-[16px] py-6 px-4 cursor-pointer">
-                        Get a Free Consultation
+                        Contact Us
                     </Button>
                 </div>
             </div>
