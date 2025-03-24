@@ -25,8 +25,8 @@ const cardServices = [
 
 export default function ServiceSection() {
     return (
-        <section className="flex justify-center  mb-150 bg-[#fffffe]">
-            <div className="p-6 bg-[#d8eefe] shadow-lg rounded-[24px] mt-[-8rem] z-10 absolute max-w-6xl w-full">
+        <section className="flex justify-center mt-[0rem] mb-180 bg-[#fffffe]">
+            <div className="p-6 bg-[rgba(216,238,254,0.6)] shadow-lg rounded-[24px] mt-[-8rem] z-10 absolute max-w-6xl w-full backdrop-blur-md border border-[rgba(176,196,222,0.4)]">
                 <div className="py-18 border border-[#b0c4de] bg-white rounded-lg">
                     <h2 className="text-4xl font-bold text-center mb-5 text-[#094067]">
                         Our Services
